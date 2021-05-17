@@ -6,7 +6,6 @@
 #setwd("~/R/00_FabiolaDAI/Segmentacion/")
 
 # 2. Librerias ----
-# install.packages("remotes")
 # remotes::install_github("nmcdev/nmcMetIO")
 library(nmcMetIO)
 library(sp)
@@ -64,7 +63,7 @@ NombreRaster <- "SOM5segmentado.grd"
 if(file.exists("Resultados") == FALSE) dir.create("Resultados")
 writeRaster(SP_raster, filename = paste0("./Resultados/", NombreRaster), overwrite=TRUE)
 
-# Vectorizar usando gdal ----
+# 5.7 Vectorizar usando gdal ----
 NombreVector <- "SOM5.gpkg"
 system(paste0('gdal_polygonize.py ', 
               "./Resultados/", NombreRaster, 
