@@ -64,6 +64,7 @@ if(file.exists("Resultados") == FALSE) dir.create("Resultados")
 writeRaster(SP_raster, filename = paste0("./Resultados/", NombreRaster), overwrite=TRUE)
 
 # 5.7 Vectorizar usando gdal ----
+#funciona en linux, system2 es mejor para windows
 NombreVector <- "SOM5.gpkg"
 system(paste0('gdal_polygonize.py ', 
               "./Resultados/", NombreRaster, 
