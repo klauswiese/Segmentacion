@@ -75,7 +75,7 @@ sessionInfo()
 
 #R version 4.0.3 (2020-10-10)
 #Platform: x86_64-pc-linux-gnu (64-bit)
-#Running under: Ubuntu 20.04.1 LTS
+#Running under: Ubuntu 20.04.1
 
 #Matrix products: default
 #BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.9.0
