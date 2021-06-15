@@ -70,7 +70,7 @@ system(paste0('gdal_polygonize.py ',
               "./Resultados/", NombreRaster, 
               ' \"./Resultados/"', NombreVector, ' \ -b  1 -f "GPKG" DN'))
 
-# 7. Información de sessión ----
+# 6. Información de sessión ----
 sessionInfo()
 
 #R version 4.0.3 (2020-10-10)
